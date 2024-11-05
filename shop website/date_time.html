@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текущая дата и время</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            transition: background-color 0.5s; /* Плавный переход цвета фона */
+        }
+        #dateTime {
+            font-size: 1.5rem; /* Увеличиваем размер шрифта для даты и времени */
+            margin-top: 20px;  /* Добавляем отступ сверху */
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mt-5">Текущая дата и время</h1>
+        <div id="dateTime" class="mt-3"></div>
+        <button id="updateButton" class="btn btn-primary mt-3">Обновить время</button>
+    </div>
+
+    <script>
+        // Функция для отображения текущей даты и времени
+        function updateDateTime() {
+            const now = new Date(); // Получаем текущую дату и время
+            const options = {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                hour12: true // Формат 12 часов
+            };
+            const formattedDate = now.toLocaleString('ru-RU', options); // Форматируем дату
+            document.getElementById('dateTime').innerText = formattedDate; // Отображаем дату на странице
+        }
+
+        // Вызываем функцию для первоначального отображения даты и времени
+        updateDateTime();
+
+        // Добавляем обработчик события для обновления времени
+        const button = document.getElementById('updateButton');
+        button.addEventListener('click', updateDateTime);
+    </script>
+</body>
+</html>

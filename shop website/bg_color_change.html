@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменение цвета фона</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем CSS -->
+    <style>
+        body {
+            transition: background-color 0.5s; /* Плавный переход цвета фона */
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mt-5">Измените цвет фона</h1>
+        <button id="colorButton" class="btn btn-primary mt-3">Изменить цвет</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Подключаем JavaScript -->
+
+    <script>
+        // Массив с предопределенными цветами
+        const colors = ['#FF5733', '#33FF57', '#3357FF', '#F0E68C', '#FF33F6'];
+
+        // Функция для генерации случайного цвета
+        function getRandomColor() {
+            const randomIndex = Math.floor(Math.random() * colors.length);
+            return colors[randomIndex];
+        }
+
+        // Получаем кнопку и добавляем обработчик события
+        const button = document.getElementById('colorButton');
+        button.addEventListener('click', () => {
+            document.body.style.backgroundColor = getRandomColor();
+        });
+
+    </script>
+</body>
+</html>

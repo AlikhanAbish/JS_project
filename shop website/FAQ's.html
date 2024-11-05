@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/FAQ'sStyle.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html" style="font-size: 1.5rem">TrendWave</a>
+        <ul class="navbar-nav mr-auto" style="font-size: 1.25rem;">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Catalog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto" style="font-size: 1.25rem;">
+          <li class="nav-item active">
+              <a class="nav-link" href="login.html">Account</a>
+          </li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <button id="mode-toggle" onclick="toggleMode()">Switch to Dark Mode</button>
+    </div>
+
+    <!-- <div class="container text-center">
+        <h3 class="mt-5">Theme</h3>
+        <button id="colorButton" class="btn btn-primary mt-3 mb-2">change</button>
+    </div> -->
+
+
+    <div class="container mt-5">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+            <div>
+                <p class="faq-question">1. How can I track my order?</p>
+                <div class="faq-answer">
+                    <p>You can track your order by logging into your account and clicking on the "Order History" tab. There you will find real-time updates on the status of your order.</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="faq-question">2. What is your return policy?</p>
+                <div class="faq-answer">
+                    <p>We offer a 30-day return policy. Items must be unworn, unwashed, and in their original condition. You can initiate a return through the "Returns" section in your account.</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="faq-question">3. Do you offer international shipping?</p>
+                <div class="faq-answer">
+                    <p>Yes, we ship internationally. Shipping costs and delivery times vary depending on the destination. You can find more information during checkout.</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="faq-question">4. Can I cancel or modify my order?</p>
+                <div class="faq-answer">
+                    <p>Yes, you can modify or cancel your order within 24 hours of placing it. After that, the order will be processed and shipped, and changes will no longer be possible.</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="faq-question">5. How do I know if an item is back in stock?</p>
+                <div class="faq-answer">
+                    <p>You can sign up for notifications on product pages. If an item is out of stock, you'll receive an email as soon as it's available again.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <h2>Subscribe to our Clothing Store Newsletter</h2>
+        <p>Stay updated with our latest products and offers!</p>
+        
+        <button class="btn btn-primary open-popup-btn">Subscribe</button>
+    </div>
+
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup" id="close-popup">&times;</span>
+            <h3>Subscribe to our Newsletter</h3>
+            <form class="popup-form">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                </div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+
+    <footer class="bg-body-tertiary text-center text-lg-start" style="background-color: #a5a8ae;">
+        <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Categories</h5>
+    
+            <ul class="list-unstyled mb-0">
+                <li>
+                <a href="#!" class="text-body">Woman</a>
+                </li>
+                <li>
+                <a href="#!" class="text-body">Man</a>
+                </li>
+                <li>
+                <a href="#!" class="text-body">Shoes</a>
+                </li>
+                <li>
+                <a href="#!" class="text-body">Watches</a>
+                </li>
+            </ul>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Help</h5>
+    
+            <ul class="list-unstyled">
+                <li>
+                <a href="#!" class="text-body">Track Order</a>
+                </li>
+                <li>
+                <a href="#!" class="text-body">Returns</a>
+                </li>
+                <li>
+                <a href="#!" class="text-body">Shipping</a>
+                </li>
+                <li>
+                <a href="FAQ's.html" class="text-body">FAQs</a>
+                </li>
+            </ul>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Address</h5>
+    
+            <ul class="list-unstyled mb-0">
+                <li>
+                <a href="#!" class="text-body">8th floor, 379 Hudson St, New York</a>
+                </li>
+                <li>
+                <a href="#!" class="text-body">230217@astanait.edu.kz</a>
+                </li>
+            </ul>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Contacts</h5>
+    
+            <ul class="list-unstyled">
+                <li>
+                <a href="#!" class="text-body">Alikhan Abishev, 16.09.2024</a>
+                </li>
+                <li>
+                <a href="#!" class="text-body">(+1) 96 716 6879</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2020 Copyright:
+        <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+    </footer>
+
+    <script src="js/FAQ's.js"></script>
+
+</body>
+</html>

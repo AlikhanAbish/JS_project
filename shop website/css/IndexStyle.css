@@ -1,0 +1,172 @@
+.custom-card {
+    max-width: 350px;
+  }
+
+  .custom-img {
+    height: 350px; 
+    object-fit: cover;
+  }
+
+.catalog-card {
+    padding-bottom: 25px;
+    padding-top: 20px;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+nav {
+    background-color: #cfcfcf;
+    height: 80px;
+}
+
+.grid {
+    padding-bottom: 25px;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.catalog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+  }
+  .row {
+    justify-content: center; /* Центрирование по горизонтали */
+  }
+
+/* .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  .carousel-inner img {
+    margin: auto;
+  }
+
+  .carousel-inner img {
+    margin: auto;
+    width: 120%; 
+    height: 500px; 
+    object-fit: cover; 
+  } */
+  
+
+
+/* body {
+    background-color: #FFF8E8;
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav {
+    margin: auto;
+}
+
+.img {
+    border-radius: 30%;
+}
+
+.main-nav {
+    color: black;
+    
+
+}
+
+.push {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:x-large;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #AAB396;
+}
+
+/* #back {
+    background-image: url(pictures/mainpage.jpg);
+} */
+/* 
+.button-shop {
+    background-color: #AAB396;
+    color: white;
+    border:#111;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-style: oblique;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.button-shop a{
+    text-decoration: none;
+
+}
+
+button {
+    text-decoration: none;
+}
+
+.table1 {
+    width: 70%;
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+    border-width: 20%;
+}
+
+td {
+    padding-bottom: 20px;
+}
+
+th {
+    height: 100px;
+    font-size: xx-large;
+    color:#674636;
+}
+
+h2 {
+    background-color: #F7EED3;
+    border-radius: 30px;
+}
+
+.table2 {
+    text-align: center;
+    width: 100%;
+}
+
+hr {
+    background-color: #AAB396;
+    height: 10px;
+}
+footer {
+    background-color: #AAB396;
+} */ 
