@@ -106,11 +106,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Login function
   function login() {
     const username = document.getElementById("username").value;
-    if (username) {
+    const password = document.getElementById("password").value;
+    if (username, password) {
       localStorage.setItem("username", username);
+      localStorage.setItem("password", password);
       showWelcomeMessage(username);
     } else {
-      alert("Please enter a username.");
+      alert("Please fill the filds.");
     }
   }
   
